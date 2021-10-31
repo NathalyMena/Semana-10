@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Semana 10</title>
+<link rel="stylesheet" href="css/index.css">
+
+    </head>
+    <body>
+        <div id="paginaPrincipal">
+<h1>Votacion</h1>
+
+<h2>Registre el candidato para la encuesta</h2>
+
+<input id="IdCandidato" placeholder="ID" type="text"> <br>
+<input id="Nombre" placeholder="Nombre" type="text"> <br>
+<button id="Registrar">Registrar</button>
+
+<h3>Vota por el candidato usando su ID </h3>
+<input id="IdUsuario" placeholder="ID" type="text"><br>
+<button id="Votar">Votar</button> <br>
+
+<button id="Candidatos">Ver candidatos</button> <br>
+<button id="Votaciones">Ver votaciones</button>
+</div>
+    </body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+<script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyBP59t4o0mrua5hMocGPFD38MPIK_Bcxeo",
+      authDomain: "semana11-a84ed.firebaseapp.com",
+      databaseURL: "https://semana11-a84ed-default-rtdb.firebaseio.com/",
+      projectId: "esemana11-a84ed",
+      storageBucket: "semana11-a84ed.appspot.com",
+      messagingSenderId: "1077382679956",
+      appId: "1:1077382679956:web:85eb5608d17c6251015381",
+      measurementId: "G-B1CR1P1B2L"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+<script src = "js/index.js"></script>
